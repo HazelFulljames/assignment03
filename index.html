@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PokeMatch</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+  <!-- Actual let's not do that -->
+  <!-- import jQuery
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+</head>
+
+<body col="dark">
+
+  <template id="pokecard">
+    <div class="pokemon click">
+      <img id="img" class="front_face" src="" alt="">
+      <img class="back_face" src="back.webp" alt="">
+    </div>
+  </template>
+
+  <span class="btn-group" role="group">
+    <button class="difficulty btn btn-primary active" id="3">Easy</button>
+    <button class="difficulty btn btn-primary" id="6">Medium</button>
+    <button class="difficulty btn btn-primary" id="10">Hard</button>
+  </span>
+  <br> <br>
+  <button id="reset" class="btn btn-info">Reset</button>
+  <button id="start" class="btn btn-info">Start</button>
+  <br>
+  <span id="game_info"></span>
+  <span id="timer"></span>
+  <br>
+  <button id="powerUp" class="btn btn-success">Reveal all (Uses: 1)</button>
+  <br>
+  <span id="game_grid" class="easy" col="dark" style="content-visibility: hidden;">
+    <!-- Pokemon Cards Go Here -->
+  </span>
+  <br>
+  <span class="btn-group" role="group">
+    <button id="dark" class="btn btn-dark">Dark</button>
+    <button id="light" class="btn btn-light">Light</button>
+  </span>
+  <script src="index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+</body>
+
+</html>
